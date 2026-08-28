@@ -18,6 +18,17 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
 | Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Download](../../releases/download/latest/debian-helium-heltec-ht-m2808.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
  
 > **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above. Update the links to point at your actual release assets.
+
+## Default Credentials
+ 
+All devices ship with the following default SSH login:
+ 
+| Field    | Value  |
+|----------|--------|
+| Username | `root` |
+| Password | `1234` |
+ 
+> **Security Note:** Change the default password immediately after first boot with `passwd`.
  
  
 ## Requirements
