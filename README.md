@@ -47,7 +47,7 @@ Applies to: **Bobcat G280, Bobcat G285, Panther X2, Nebra RockPi**
 1. Download the appropriate image for your device from the [Releases](../../releases) page.
 2. Decompress the image if it is archived (e.g. `.img.xz`):
 ```bash
-   xz -d debian-helium-<device>.img.xz
+   xz -d <imagename>.img.xz
 ```
 3. Identify your SD card device node:
 ```bash
@@ -56,7 +56,7 @@ Applies to: **Bobcat G280, Bobcat G285, Panther X2, Nebra RockPi**
    Be certain you select the correct device (e.g. `/dev/sdX` or `/dev/mmcblkX`) — writing to the wrong disk will destroy data.
 4. Write the image to the SD card:
 ```bash
-   sudo dd if=debian-helium-<device>.img of=/dev/sdX bs=4M status=progress conv=fsync
+   sudo dd if=<imagename>.img of=/dev/sdX bs=4M status=progress conv=fsync
 ```
 5. Once complete, safely eject the card:
 ```bash
@@ -102,7 +102,7 @@ sudo rkdeveloptool db <loader_file>.bin
 ### 5. Write the Image to eMMC
  
 ```bash
-sudo rkdeveloptool wl 0 debian-helium-29x.img
+sudo rkdeveloptool wl 0 BobcatBookworm29x.img
 ```
  
 ### 6. Reset and Boot
