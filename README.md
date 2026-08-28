@@ -13,7 +13,7 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
 | Bobcat G280        | PX30         | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) | — | No Wifi |
 | Bobcat G285        | RK3566       | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm285.img.xz) | — |
 | Bobcat 29x         | RK3566       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
-| Panther X2         | RK3566       | ✅ Yes            | SD Card          | [Coming Soon]() | — |
+| Panther X2         | RK3566       | ✅ Yes            | SD Card / Internal eMMC         | [Coming Soon]() | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
 | Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    | [Coming Soon]() | — |  |
 | Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Coming Soon]() | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
  
