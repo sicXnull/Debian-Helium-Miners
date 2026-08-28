@@ -8,9 +8,9 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
  
 ## Supported Devices
  
-| Miner            | SoC          | SD Boot Support | Boot Method     | Image Download | Loader File |
-|-------------------|--------------|:----------------:|------------------|-----------------|-------------|
-| Bobcat G280        | PX30         | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) | — |
+| Miner            | SoC          | SD Boot Support | Boot Method     | Image Download | Loader File | Notes |
+|-------------------|--------------|:----------------:|------------------|-----------------|-------------|-------------|
+| Bobcat G280        | PX30         | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) | — | No Wifi |
 | Bobcat G285        | RK3566       | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm285.img.xz) | — |
 | Bobcat 29x         | RK3566       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
 | Panther X2         | RK3566       | ✅ Yes            | SD Card          | [Download]() | — |
