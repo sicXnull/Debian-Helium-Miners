@@ -37,7 +37,7 @@ All devices ship with the following default SSH login:
 - microSD card (8GB minimum) for SD-boot devices
 - USB-A to USB-C (or applicable) cable for eMMC flashing
 - [balenaEtcher](https://etcher.balena.io/) or `dd` for writing SD images
-- [RKDeveloptool](https://github.com/rockchip-linux/rkdeveloptool) for eMMC flashing (29x series only)
+- [RKDeveloptool](https://github.com/rockchip-linux/rkdeveloptool) for eMMC flashing
 ---
  
 ## SD Card Boot Instructions
