@@ -6,14 +6,18 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
  
 ## Supported Devices
  
-| Miner            | SoC          | SD Boot Support | Boot Method     |
-|-------------------|--------------|:----------------:|------------------|
-| Bobcat G280        | PX30         | ✅ Yes            | SD Card          |
-| Bobcat G285        | RK3566       | ✅ Yes            | SD Card          |
-| Bobcat 29x         | RK3566       | ❌ No             | Internal eMMC    |
-| Panther X2         | RK3566       | ✅ Yes            | SD Card          |
-| Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    |
-| Heltec HT-M2808    | RK3328       | ❌ No            | Internal eMMC    |
+## Supported Devices
+ 
+| Miner            | SoC          | SD Boot Support | Boot Method     | Image Download | Loader File |
+|-------------------|--------------|:----------------:|------------------|-----------------|-------------|
+| Bobcat G280        | PX30         | ✅ Yes            | SD Card          | [Download](../../releases/download/latest/debian-helium-g280.img.xz) | — |
+| Bobcat G285        | RK3566       | ✅ Yes            | SD Card          | [Download](../../releases/download/latest/debian-helium-g285.img.xz) | — |
+| Bobcat 29x         | RK3566       | ❌ No             | Internal eMMC    | [Download](../../releases/download/latest/debian-helium-29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
+| Panther X2         | RK3566       | ✅ Yes            | SD Card          | [Download](../../releases/download/latest/debian-helium-pantherx2.img.xz) | — |
+| Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    | [Download](../../releases/download/latest/debian-helium-nebra-rockpi.img.xz) | — |  |
+| Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Download](../../releases/download/latest/debian-helium-heltec-ht-m2808.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
+ 
+> **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above. Update the links to point at your actual release assets.
  
  
 ## Requirements
