@@ -17,7 +17,7 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
 | Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    | [Coming Soon]() | — |  |
 | Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Coming Soon]() | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
  
-> **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above. Update the links to point at your actual release assets.
+> **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above.
 
 ## Default Credentials
  
