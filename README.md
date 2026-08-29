@@ -6,8 +6,6 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
  
 ## Supported Devices
  
-## Supported Devices
- 
 | Miner            | SoC          | SD Boot Support | Boot Method     | Image Download | Loader File | Notes |
 |-------------------|--------------|:----------------:|------------------|-----------------|-------------|-------------|
 | Bobcat G280        | PX30         | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) | — | No Wifi |
