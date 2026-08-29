@@ -2,7 +2,7 @@
  
 ## Board Layout
  
-<img width="2104" height="1672" alt="panther-x2-layout" src="https://github.com/user-attachments/assets/135e7111-e147-4f35-8ad1-1a718acf0262" />
+<img width="2046" height="1694" alt="panther-x2-layout" src="https://github.com/user-attachments/assets/07df1a9e-87a9-4358-afba-5b69de0f9c3d" />
  
 ## Characteristics
  
