@@ -124,6 +124,7 @@ echo "Rsyncing root..."
 rsync -aHAX --numeric-ids --info=progress2 \
     --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found","$BOOT_MOUNT/*"} \
     / /mnt/dst_root/
+# Note: /mnt/* is already excluded above, which covers our /mnt/src_boot and /mnt/dst_root scratch mounts.
 
 echo "Rsyncing boot..."
 rsync -aHAX --numeric-ids --info=progress2 "${SRC_BOOT_MOUNT}/" "/mnt/dst_root${BOOT_MOUNT}/"
@@ -139,8 +140,21 @@ echo "New boot UUID: $NEW_BOOT_UUID"
 EXTLINUX="/mnt/dst_root${BOOT_MOUNT}/extlinux/extlinux.conf"
 if [[ -f "$EXTLINUX" ]]; then
     sed -i "s|root=[^ ]*|root=UUID=${NEW_ROOT_UUID}|" "$EXTLINUX"
+    echo "Updated $EXTLINUX"
+fi
+
+UENV="/mnt/dst_root${BOOT_MOUNT}/uEnv.txt"
+if [[ -f "$UENV" ]]; then
+    sed -i "s|^rootdev=.*|rootdev=UUID=${NEW_ROOT_UUID}|" "$UENV"
+    echo "Updated $UENV"
+    grep '^rootdev=' "$UENV"
 else
-    echo "WARNING: $EXTLINUX not found — check boot config path manually" >&2
+    echo "WARNING: $UENV not found — check boot config path manually" >&2
+fi
+
+if [[ ! -f "$EXTLINUX" && ! -f "$UENV" ]]; then
+    echo "ERROR: neither extlinux.conf nor uEnv.txt found on boot partition — root UUID was NOT updated." >&2
+    exit 1
 fi
 
 sed -i "s|UUID=${SRC_P2_UUID}|UUID=${NEW_ROOT_UUID}|; s|UUID=${SRC_P1_UUID}|UUID=${NEW_BOOT_UUID}|" \
