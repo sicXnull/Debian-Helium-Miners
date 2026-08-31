@@ -1,5 +1,9 @@
 # Debian Helium Miners
- 
+
+> ⚠️ **WARNING:** Use these images at your own risk. They have been tested and confirmed working on the author's own hardware, but there is no guarantee they will work the same way on every device or revision. Flashing custom firmware can brick your miner — proceed with caution, and always keep a backup of your original image if possible.
+>
+> **Do NOT attempt to update the kernel on these images.**
+
 Debian Bookworm on Kernel 6.x for various Helium (IoT/Rockchip) miner hardware.
  
 This project provides prebuilt Debian Bookworm images and flashing instructions for a range of Helium miner devices based on Rockchip SoCs.
@@ -12,7 +16,7 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
 | Bobcat G285        | RK3566       | ✅ Yes            | SD Card          | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm285.img.xz) | — |
 | Bobcat G29x        | RK3566       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
 | Panther X2/MerryIOT| RK3566       | ✅ Yes            | SD Card / Internal eMMC         | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/PantherX2Bookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
-| Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    | [Coming Soon]() | — |  |
+| Nebra RockPi       | Rockchip     | ✅ Yes            | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/RockpiBookworm.img.xz) | — | SD Boot-write to EMMC, see tutorial |
 | Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/HeltecBookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
  
 > **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above.
@@ -120,3 +124,4 @@ Disconnect the USB cable and power-cycle the miner normally. It should boot Debi
 | Device not detected by `rkdeveloptool ld` | Not in maskrom mode | Retry the button/timing sequence in step 2 |
 | SD card not booting | Card not written correctly, or SD boot fused off | Re-write image; confirm device supports SD boot per the table above |
 | Flash fails partway through eMMC write | Bad USB cable or port | Use a rated USB-C data cable and a direct (non-hub) USB port |
+
