@@ -126,7 +126,6 @@ Make sure you're running `rkdeveloptool` commands with `sudo` or as root.
 ### All flashing steps succeeded but the OS won't boot
 - Make sure the OS image was fully extracted before flashing.
 - Some OS images aren't raw images — they lack the "boot" portion and use a different format, which won't work with this method.
-- Try the [UART Debugging](#uart-debugging) procedure below to inspect the boot log.
 
 ## Force Maskrom Mode
 
