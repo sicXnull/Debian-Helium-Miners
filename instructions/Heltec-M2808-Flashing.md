@@ -12,7 +12,7 @@
 - Flash: 32GB eMMC 5.1
 ## Read Before Flashing
  
-> **WARNING:** Flashing your unit with a custom, 3rd-party OS will erase the original OS along with all existing settings and user data. There is no easy way to back up the existing OS/data, so proceed with caution.
+> **WARNING:** Flashing your unit with a custom, 3rd-party OS will erase the original OS along with all existing settings and user data. There is no easy way to back up the existing OS/data, so proceed with caution. There were reports of some users losing I2C functionality which means Helium WILL NOT WORK. When testing on my unit, I2C functionality was fine, but keep this in mind before flashing 
  
 ## Flashing From Windows
  
