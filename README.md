@@ -1,5 +1,11 @@
 # Debian Helium Miners
 
+## Support
+
+Need help, have questions, or want to chat with other users? Join the Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?logo=discord&logoColor=white)](https://discord.com/invite/ZwHAVHUsFR)
+
 > ⚠️ **WARNING:** Use these images at your own risk. They have been tested and confirmed working on the author's own hardware, but there is no guarantee they will work the same way on every device or revision. Flashing custom firmware can brick your miner — proceed with caution, and always keep a backup of your original image if possible.
 >
 > **Do NOT attempt to update the kernel on these images.**
@@ -17,7 +23,7 @@ This project provides prebuilt Debian Bookworm images and flashing instructions 
 | Bobcat G29x        | RK3566       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
 | Panther X2/MerryIOT| RK3566       | ✅ Yes            | SD Card / Internal eMMC         | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/PantherX2Bookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
 | Nebra RockPi       | RK3399      | ✅ Yes            | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/RockpiBookworm.img.xz) | — | SD Boot-write to EMMC, see tutorial |
-| Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Coming Soon]() | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
+| Heltec HT-M2808    | RK3328       | ❌ No             | Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/HeltecBookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) |
  
 > **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool with the corresponding loader file above.
 
