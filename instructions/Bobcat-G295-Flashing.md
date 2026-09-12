@@ -18,6 +18,8 @@ After opening the case of your Bobcat, compare the board photo above with your u
 > **WARNING:** Flashing your unit with a custom, 3rd-party OS will erase the original OS along with all existing settings and user data. There is no easy way to back up the existing OS/data, so proceed with caution.
  
 > **WARNING:** Make sure you've correctly identified your Bobcat model and selected the matching OS variant. Recovering from a unit flashed with the wrong variant is painful and may brick it.
+
+You need a Torx 9 screwdriver to open the case.
  
 ## Flashing From Windows
  
