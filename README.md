@@ -11,21 +11,22 @@ Need help, have questions, or want to chat with other users? Join the Discord:
 >
 > **Do NOT attempt to update the kernel on these images.**
 
-Debian Bookworm on Kernel 6.x for various Helium (IoT/Rockchip) miner hardware.
+Debian Bookworm/Trixie on Kernel 6.x/7.2 for various Helium (IoT/Rockchip) miner hardware.
  
-This project provides prebuilt Debian Bookworm images and flashing instructions for a range of Helium miner devices based on Rockchip SoCs.
+This project provides prebuilt Debian images and flashing instructions for a range of Helium miner devices based on Rockchip SoCs.
  
+
 ## Supported Devices
 
 | Miner               | SoC     | SD Boot Support | Boot Method               | Image Download | Loader File | Tutorial | Notes |
 |----------------------|---------|:----------------:|----------------------------|-----------------|-------------|----------|-------------|
-| Bobcat G280           | PX30    | ✅ Yes            | SD Card                    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) | — | — |  |
-| Bobcat G285           | RK3566  | ✅ Yes            | SD Card                    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm285.img.xz) | — | — |
-| Bobcat G29x           | RK3566  | ❌ No             | Internal eMMC               | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [290](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Bobcat-G290-Flashing.md) / [295](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Bobcat-G295-Flashing.md) |
-| Panther X2/MerryIOT   | RK3566  | ✅ Yes            | SD Card / Internal eMMC    | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/PantherX2Bookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Pantherx2-MerryIOT-Flashing.md) |
-| Linxdot LD1001        | RK3566  | ❌ No            | Internal eMMC                 | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/LinxdotLD1001Bookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Linxdot-LD1001-Flashing.md) | Board Specific, see tutorial |
-| Nebra RockPi          | RK3399  | ✅ Yes            | Internal eMMC               | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/RockpiBookworm.img.xz) | — | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Rockpi-EMMC-Install.md) | SD Boot-write to EMMC, see tutorial |
-| Heltec HT-M2808       | RK3328  | ❌ No             | Internal eMMC               | [Download](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/HeltecBookworm.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Heltec-M2808-Flashing.md) |
+| Bobcat G280           | PX30    | ✅ Yes            | SD Card                    | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm280.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/BobcatTrixie280.img.xz) | — | — |  |
+| Bobcat G285           | RK3566  | ✅ Yes            | SD Card                    | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm285.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/BobcatTrixie285.img.xz) | — | — |
+| Bobcat G29x           | RK3566  | ❌ No             | Internal eMMC               | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/BobcatBookworm29x.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/BobcatTrixie29x.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [290](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Bobcat-G290-Flashing.md) / [295](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Bobcat-G295-Flashing.md) |
+| Panther X2/MerryIOT   | RK3566  | ✅ Yes            | SD Card / Internal eMMC    | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/PantherX2Bookworm.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/PantherX2Trixie.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Pantherx2-MerryIOT-Flashing.md) |
+| Linxdot LD1001        | RK3566  | ❌ No            | Internal eMMC                 | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/LinxdotLD1001Bookworm.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/LinxdotLD1001Trixie.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Linxdot-LD1001-Flashing.md) | Board Specific, see tutorial |
+| Nebra RockPi          | RK3399  | ✅ Yes            | Internal eMMC               | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/RockpiBookworm.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/RockpiTrixie.img.xz) | — | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Rockpi-EMMC-Install.md) | SD Boot-write to EMMC, see tutorial |
+| Heltec HT-M2808       | RK3328  | ❌ No             | Internal eMMC               | [Bookworm](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/1.0/HeltecBookworm.img.xz) / [Trixie](https://github.com/sicXnull/Debian-Helium-Miners/releases/download/2.0/HeltecTrixie.img.xz) | [Loader](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/loader-files/rk356x_spl_loader_ddr1056_v1.10.111.bin) | [Tutorial](https://github.com/sicXnull/Debian-Helium-Miners/blob/main/instructions/Heltec-M2808-Flashing.md) |
  
 > **Note:** Devices with "Internal eMMC" as their boot method must be flashed using RKDeveloptool/RKDevTool.exe with the corresponding loader file above.
 
@@ -121,7 +122,7 @@ sudo rkdeveloptool wl 0 BobcatBookworm29x.img
 sudo rkdeveloptool rd
 ```
  
-Disconnect the USB cable and power-cycle the miner normally. It should boot Debian Bookworm from the internal eMMC.
+Disconnect the USB cable and power-cycle the miner normally. It should boot Debian from the internal eMMC.
  
 ---
  
